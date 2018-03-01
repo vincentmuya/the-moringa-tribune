@@ -3,6 +3,7 @@ import datetime as dt
 from django.shortcuts import render,redirect
 from .models import Article
 from .forms import NewsLetterForm
+from .email import send_welcome_email
 
 # Create your views here.
 def news_today(request):
