@@ -1,7 +1,7 @@
 from django.http import HttpResponse, Http404,HttpResponseRedirect
 import datetime as dt
 from django.shortcuts import render,redirect
-from .models import Article
+from .models import Article,NewsLetterRecipients
 from .forms import NewsLetterForm
 from .email import send_welcome_email
 
